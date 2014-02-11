@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
     end
   end
 
-
   def show
     @character = Character.find(params[:id])
     respond_to do |format|

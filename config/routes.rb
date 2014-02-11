@@ -1,7 +1,14 @@
 ApiDemo::Application.routes.draw do
   root to: 'characters#index'
 
-  resources :characters, only: [:index, :show]
+  #character routes
+  match '/api/v1/characters',          to: 'characters#index'
+  match '/api/v1/characters/:id',      to: 'characters#show'
+
+  match '/api/v1/cards',                        to: 'cards#index'
+  match '/api/v1/cards/:id',                    to: 'cards#show'
+  match '/api/v1/cards/by_class/:character_id', to: 'cards#show_class_cards'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
