@@ -28,3 +28,8 @@ end
 
 gem 'jquery-rails'
 gem 'active_model_serializers'
+gem 'rails_12factor'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
