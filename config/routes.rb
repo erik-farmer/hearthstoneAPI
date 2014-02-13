@@ -1,4 +1,4 @@
-ApiDemo::Application.routes.draw do
+HearthStoneAPI::Application.routes.draw do
   root to: 'static_pages#home'
 
   #character routes

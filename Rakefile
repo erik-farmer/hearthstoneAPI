@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ApiDemo::Application.load_tasks
+HearthStoneAPI::Application.load_tasks
