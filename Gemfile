@@ -29,6 +29,7 @@ end
 gem 'jquery-rails'
 gem 'active_model_serializers'
 gem 'rails_12factor'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'pg', '0.12.2'
