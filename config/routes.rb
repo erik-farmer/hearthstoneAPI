@@ -1,5 +1,5 @@
 ApiDemo::Application.routes.draw do
-  root to: 'characters#index'
+  root to: 'static_pages#home'
 
   #character routes
   match '/api/v1/characters',          to: 'characters#index'

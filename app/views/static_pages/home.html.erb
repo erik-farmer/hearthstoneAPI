@@ -1,0 +1,25 @@
+<h1>Hearthstone API (v1.0)</h1>
+
+<h2>Guide</h2>
+
+<h3>Getting Character Ids</h3>
+<p>/api/v1/characters.json</p>
+returns a list of characters and the id associated with them for other calls
+<%= link_to "Demo", '/api/v1/characters.json' %>
+
+<p>/api/v1/characters/<:id>.json</p>
+returns a specific character
+<%= link_to "Demo", '/api/v1/characters/1.json' %>
+
+<h3>Getting Cards</h3>
+<p>/api/v1/cards.json</p>
+returns all cards
+<%= link_to "Demo", '/api/v1/cards.json' %>
+
+<p>/api/v1/cards/<:id>.json</p>
+returns a specific card
+<%= link_to "Demo", '/api/v1/cards/99.json' %>
+
+<p>/api/v1/cards/by_class/<:character_id>.json</p>
+returns all cards by class given a character id
+<%= link_to "Demo", '/api/v1/cards/by_class/9.json' %>
