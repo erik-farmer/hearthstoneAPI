@@ -23,3 +23,7 @@ returns a specific card
 <p>/api/v1/cards/by_class/<:character_id>.json</p>
 returns all cards by class given a character id
 <%= link_to "Demo", '/api/v1/cards/by_class/9.json' %>
+
+<p>/api/v1/cards/by_name/<:card_name>.json</p>
+returns a card by given name ('_' used for spaces)
+<%= link_to "Demo", "/api/v1/cards/by_name/Kor'Kron_Elite.json" %>

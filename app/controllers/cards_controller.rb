@@ -24,4 +24,13 @@ class CardsController < ApplicationController
     end
   end
 
+  def show_named_card
+    card_name = params[:card_name].split('_').join(' ').downcase
+    @card = Card.where(name: card_name)
+    respond_to do |format|
+      format.html
+      format.json { render json: @card }
+    end
+  end
+
 end

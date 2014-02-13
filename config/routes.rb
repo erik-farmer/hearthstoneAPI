@@ -8,6 +8,7 @@ HearthStoneAPI::Application.routes.draw do
   match '/api/v1/cards',                        to: 'cards#index'
   match '/api/v1/cards/:id',                    to: 'cards#show'
   match '/api/v1/cards/by_class/:character_id', to: 'cards#show_class_cards'
+  match '/api/v1/cards/by_name/:card_name',     to: 'cards#show_named_card'
 
 
   # The priority is based upon order of creation:
