@@ -1,29 +1,32 @@
-<h1>Hearthstone API (v1.0)</h1>
+<nav class="navbar navbar-inverse" role="navigation">
+  <a href="" class="navbar-brand">Hearthstone API (v1.0)</a>
+</nav>
 
-<h2>Guide</h2>
+<div class="container">
+  <h2>Guide</h2>
 
-<h3>Getting Character Ids</h3>
-<p>/api/v1/characters.json</p>
-returns a list of characters and the id associated with them for other calls
-<%= link_to "Demo", '/api/v1/characters.json' %>
+  <h4>Getting Character (class) Ids</h4>
+  <p>Return a list of characters and the id associated with them for other calls
+  <%= link_to "Demo", '/api/v1/characters.json' %></p>
+  <blockquote><p>/api/v1/characters.json</p></blockquote>
+  
+  <p>Return a specific character <%= link_to "Demo", '/api/v1/characters/1.json' %></p>
+  <blockquote> <p>/api/v1/characters/<:id>.json</p></blockquote>
 
-<p>/api/v1/characters/<:id>.json</p>
-returns a specific character
-<%= link_to "Demo", '/api/v1/characters/1.json' %>
+  <h4>Getting Cards</h4>
+  <p>Return all cards
+  <%= link_to "Demo", '/api/v1/cards.json' %></p>
+  <blockquote><p>/api/v1/cards.json</p></blockquote>
 
-<h3>Getting Cards</h3>
-<p>/api/v1/cards.json</p>
-returns all cards
-<%= link_to "Demo", '/api/v1/cards.json' %>
+  <p>Return a specific card
+  <%= link_to "Demo", '/api/v1/cards/99.json' %></p>
+  <blockquote><p>/api/v1/cards/<:id>.json</p></blockquote>
 
-<p>/api/v1/cards/<:id>.json</p>
-returns a specific card
-<%= link_to "Demo", '/api/v1/cards/99.json' %>
-
-<p>/api/v1/cards/by_class/<:character_id>.json</p>
-returns all cards by class given a character id
-<%= link_to "Demo", '/api/v1/cards/by_class/9.json' %>
-
-<p>/api/v1/cards/by_name/<:card_name>.json</p>
-returns a card by given name ('_' used for spaces)
-<%= link_to "Demo", "/api/v1/cards/by_name/Kor'Kron_Elite.json" %>
+  <p>Returns all cards by class given a character id
+  <%= link_to "Demo", '/api/v1/cards/by_class/9.json' %></p>
+  <blockquote><p>/api/v1/cards/by_class/<:character_id>.json</p></blockquote>
+  
+  <p>Return a card by given name ('_' used for spaces)
+  <%= link_to "Demo", "/api/v1/cards/by_name/Kor'Kron_Elite.json" %></p>
+  <blockquote><p>/api/v1/cards/by_name/<:card_name>.json</p></blockquote>
+</div>
